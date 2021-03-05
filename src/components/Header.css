@@ -1,0 +1,112 @@
+.nav {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding: 20px 6.994vw 20px 6.994vw;
+    background: var(--primary-color-light);
+}
+.nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.header-logo {
+    width: 178px;
+    height: 59px;
+}
+#logo-name {
+    fill: var(--secondary-color);
+}
+.godark-button {
+    cursor: pointer;
+    background: inherit;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 15px 0;
+    font-size: 12px;
+    line-height: 14px;
+    font-family: "GorditaBold";
+    height: 35px;
+    width: fit-content;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 31px;
+}
+.godark-button:focus {
+    outline: 0;
+    border: 2px solid var(--primary-color);
+}
+.godark-button span {
+    display: inline-block;
+    text-align: left;
+    margin-right: 9px;
+}
+.menu {
+    cursor: pointer;
+    display: inline-block;
+    color: var(--black);
+    font-size: 14px;
+    font-family: "GorditaMedium";
+    display: flex;
+    align-items: center;
+}
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    height: 8px;
+    justify-content: space-between;
+    margin-left: 15px;
+}
+.menu-icon span {
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    background: var(--black);
+    transition: all 0.5s;
+}
+.menu-icon span.open:first-of-type {
+    transform: translateY(3px) rotate(45deg);
+}
+.menu-icon span.open:last-of-type {
+    transform: translateY(-3px) rotate(-45deg);
+}
+@media (max-width: 767.98px) {
+    .menu-text {
+        display: none;
+    }
+    .godark-button {
+        margin-right: 0;
+    }
+}
+@media (max-width: 575.98px) {
+    .nav {
+        width: 100%;
+        padding: 16px 25px 16px 27px;
+    }
+    .header-logo {
+        height: 37px;
+        width: 105px;
+    }
+    .godark-button {
+        height: 30px;
+        font-family: "GorditaMedium";
+    }
+    .godark-button span {
+        text-align: center;
+    }
+    .godark-button img {
+        display: none;
+    }
+}
+@media (max-width: 424.98px) {
+    
+}

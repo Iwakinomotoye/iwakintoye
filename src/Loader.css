@@ -1,0 +1,191 @@
+.loader {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.loaderBg {
+    display: flex;
+    width: 400vw;
+    height: 100%;
+    background: #C2FCF3;
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    padding-left: 100vw;
+    animation: moveRight linear 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+.layer-one {
+    width: 50vw;
+    background: linear-gradient(180deg, #ECFFFD 0%, #ECFFFD 25%, transparent 25%, transparent 100%);
+}
+.layer-two {
+    width: 50vw;
+    background: linear-gradient(180deg, #ECFFFD 0%, #ECFFFD 50%, transparent 50%, transparent 100%);
+}
+.layer-three {
+    width: 50vw;
+    background: linear-gradient(180deg, #ECFFFD 0%, #ECFFFD 75%, transparent 75%, transparent 100%);
+}
+.layer-four {
+    width: 150vw;
+    background: linear-gradient(180deg, #ECFFFD 0%, #ECFFFD 100%);
+}
+@keyframes moveRight {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -300vw;
+    }
+}
+.my-name {
+    margin-top: -40px;
+    width: 285px;
+    font-family: "GorditaBold";
+    color: #393E46;
+    font-size: 47px;
+    line-height: 1.2;
+    position: relative;
+}
+@media (max-width: 424.98px) {
+    .my-name {
+        width: 190px;
+        font-size: 30px;
+    }
+}
+.iwakin, .omotoye {
+    position: relative;
+    z-index: 2;
+}
+.iwakin::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 0%;
+    bottom: 0;
+    right: 0;
+    height: 61%;
+    background: #32E0C4;
+    animation: growLeft linear 0.8s;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+@keyframes growLeft {
+    0% {
+        width: 0%;
+    }
+    80% {
+        width: 45%;
+    }
+    90% {
+        width: 30%;
+    }
+    100% {
+        width: 40%;
+    }
+}
+.omotoye::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 0%;
+    top: 25%;
+    left: 0;
+    height: 61%;
+    background: #32E0C4;
+    animation: growRight linear 0.8s;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+@keyframes growRight {
+    0% {
+        width: 0%;
+    }
+    80% {
+        width: 22%;
+    }
+    90% {
+        width: 7%;
+    }
+    100% {
+        width: 17%;
+    }
+}
+.iwakin p {
+    width: fit-content;
+    margin-right: auto;
+}
+.omotoye p {
+    width: fit-content;
+    margin-left: auto;
+}
+.iwakin p span, .omotoye p span {
+    display: inline-block;
+    animation: jump linear 5s;
+    animation-fill-mode: forwards;
+}
+.iwakin p span:nth-of-type(1) {
+    animation-delay: 3.1s;
+}
+.iwakin p span:nth-of-type(2) {
+    animation-delay: 3.2s;
+}
+.iwakin p span:nth-of-type(3) {
+    animation-delay: 3.3s;
+}
+.iwakin p span:nth-of-type(4) {
+    animation-delay: 3.4s;
+}
+.iwakin p span:nth-of-type(5) {
+    animation-delay: 3.5s;
+}
+.iwakin p span:nth-of-type(6) {
+    animation-delay: 3.6s;
+}
+
+
+.omotoye p span:nth-of-type(1) {
+    animation-delay: 3.1s;
+}
+.omotoye p span:nth-of-type(2) {
+    animation-delay: 3.2s;
+}
+.omotoye p span:nth-of-type(3) {
+    animation-delay: 3.3s;
+}
+.omotoye p span:nth-of-type(4) {
+    animation-delay: 3.4s;
+}
+.omotoye p span:nth-of-type(5) {
+    animation-delay: 3.5s;
+}
+.omotoye p span:nth-of-type(6) {
+    animation-delay: 3.6s;
+}
+.omotoye p span:nth-of-type(7) {
+    animation-delay: 3.7s;
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+    10% {
+        transform: translateY(0);
+    }
+    15% {
+        transform: translateY(-20px);
+    }
+    20% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

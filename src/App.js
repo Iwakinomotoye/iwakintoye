@@ -1,25 +1,44 @@
-import logo from './logo.svg';
 import './App.css';
+import { Loader } from './Loader';
+import Landing from './components/Landing';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React from "react";
+import { BrowserRouter as Router } from 'react-router-dom';
+
+export const ThemeContext = React.createContext(false);
+
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      loading: false,
+      darkTheme: false,
+    }
+  }
+  componentDidMount() {
+    setTimeout(()=> {
+      this.setState({loading: false})
+    }, 5000)
+  }
+
+  onChangeTheme() {
+    this.setState({darkTheme: !this.state.darkTheme});
+  }
+
+  render() {
+    let visiblePage = this.state.loading ? <Loader/> : <Landing onChangeTheme={() => this.onChangeTheme()}/>
+    let className = "App";
+    className = this.state.darkTheme ? className + " dark-theme" : className + " light-theme";
+    return (
+      <ThemeContext.Provider value={this.state.darkTheme}>
+      <Router>
+          <div className={className}>
+            {visiblePage}
+          </div>
+      </Router>
+        </ThemeContext.Provider>
+    );
+  }
 }
 
 export default App;

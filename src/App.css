@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: "GorditaBlack";
+  src: url('./assets/fonts/Gordita Black.otf')
+}
+@font-face {
+  font-family: "GorditaBold";
+  src: url('./assets/fonts/Gordita Bold.otf')
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@font-face {
+  font-family: "GorditaLight";
+  src: url("./assets/fonts/Gordita Light.otf")
 }
 
-.App-link {
-  color: #61dafb;
+@font-face {
+  font-family: "GorditaMedium";
+  src: url("./assets/fonts/Gordita Medium.otf")
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@font-face {
+  font-family: "GorditaRegular";
+  src: url("./assets/fonts/Gordita Regular.otf")
+}
+
+@font-face {
+  font-family: "GorditaThin";
+  src: url("./assets/fonts/Gordita Thin.otf")
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+:root .light-theme{
+  --primary-color: #32E0C4;
+  --primary-rgb-color: 50, 224, 196;
+  --primary-color-light: #ECFFFD;
+  --secondary-color: #393E46;
+  --black: #000;
+  --white: #fff;
+}
+
+:root .dark-theme {
+  --primary-color: #32E0C4;
+  --primary-color-light: #000;
+  --secondary-color: #fff;
+  --black: #fff;
+  --white: #000;
 }

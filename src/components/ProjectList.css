@@ -1,0 +1,53 @@
+.project {
+    display: flex;
+    margin-bottom: 200px;
+}
+.project-content {
+    width: 100%;
+    display: flex;
+    margin-right: -50px;
+}
+.image-container {
+    background: #fff;
+    padding: 66px;
+    box-shadow: 0px 12px 30px rgba(50, 224, 196, 0.05);
+    border-radius: 3px;
+}
+.project-details {
+    margin-left: 57px;
+}
+.project-details h1 {
+    font-family: "GorditaBold";
+    font-size: 42px;
+    line-height: 1.71;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+.project-details p {
+    font-family: "GorditaRegular";
+    font-size: 16px;
+    line-height: 2.25;
+    color: var(--secondary-color);
+}
+.project-details .stacks {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 16px;
+}
+.project-details .stack {
+    font-family: "GorditaRegular";
+    width: 98px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(var(--primary-rgb-color), 0.1);
+    color: var(--primary-color);
+    border-radius: 5px;
+    margin-right: 20px;
+    letter-spacing: 0.2em;
+    font-size: 12px;
+}
+
+/* .project-detials .stack:nth */
+/* I want to apply a background image to every nth project, like every even, or every odd, when first is not among*/
