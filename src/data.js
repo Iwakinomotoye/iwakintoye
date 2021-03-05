@@ -1,4 +1,4 @@
-export default [
+const data = [
     {
         id: 1,
         name: 'Elbox',
@@ -33,3 +33,5 @@ export default [
         stacks: ['HTML', 'CSS', 'VUE.JS', 'API']
     },
 ]
+
+export default data;
