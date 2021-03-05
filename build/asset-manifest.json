@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.83af7025.chunk.css",
+    "main.js": "/static/js/main.f9e549fe.chunk.js",
+    "main.js.map": "/static/js/main.f9e549fe.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.390de2e0.js",
+    "runtime-main.js.map": "/static/js/runtime-main.390de2e0.js.map",
+    "static/js/2.1ae1f825.chunk.js": "/static/js/2.1ae1f825.chunk.js",
+    "static/js/2.1ae1f825.chunk.js.map": "/static/js/2.1ae1f825.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.83af7025.chunk.css.map": "/static/css/main.83af7025.chunk.css.map",
+    "static/js/2.1ae1f825.chunk.js.LICENSE.txt": "/static/js/2.1ae1f825.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/static/media/Gordita Thin.c4029b22.otf",
+    "static/media/arrow.svg": "/static/media/arrow.75df90e1.svg",
+    "static/media/dots.svg": "/static/media/dots.ce19132c.svg",
+    "static/media/elbox.jpg": "/static/media/elbox.a94106e3.jpg",
+    "static/media/godark.svg": "/static/media/godark.ffd00464.svg",
+    "static/media/logo.svg": "/static/media/logo.63e0a349.svg",
+    "static/media/myphoto.jpg": "/static/media/myphoto.dc9a051d.jpg",
+    "static/media/sitting.svg": "/static/media/sitting.84627224.svg",
+    "static/media/sun.svg": "/static/media/sun.5ade60e1.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.390de2e0.js",
+    "static/js/2.1ae1f825.chunk.js",
+    "static/css/main.83af7025.chunk.css",
+    "static/js/main.f9e549fe.chunk.js"
+  ]
+}
