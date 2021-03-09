@@ -58,3 +58,20 @@ button {
   --black: #fff;
   --white: #000;
 }
+
+h1 {
+  font-family: "GorditaBold";
+  font-size: 42px;
+  line-height: 1.71;
+  color: var(--secondary-color);
+}
+@media (max-width: 1199.98px) {
+  h1 {
+    font-size: 33px;
+  }
+}
+@media (max-width: 575.98px) {
+  h1 {
+    font-size: 24px;
+  }
+}

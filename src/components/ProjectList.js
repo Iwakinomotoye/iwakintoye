@@ -1,5 +1,6 @@
 import './ProjectList.css';
 import arrow from '../assets/images/arrow.svg';
+import dots from '../assets/images/dots.svg';
 
 const ProjectList = ({projects}) => {
    
@@ -12,6 +13,7 @@ const ProjectList = ({projects}) => {
                     
                     return (
                         <div key={id} className="project">
+                            <img src={dots} alt="" className="dots"/>
                             <div className="project-content">
                                 <div className="image-container">
                                     <img src={require("../assets/images/" + image).default} alt={name} />
@@ -21,8 +23,8 @@ const ProjectList = ({projects}) => {
                                     <p>{description}</p>
                                     <div className="stacks">
                                         {
-                                            stacks.map(stack => {
-                                                return <div className="stack">{stack}</div>
+                                            stacks.map((stack, index) => {
+                                                return <div className="stack" key={index}>{stack}</div>
                                             })
                                         }
                                     </div>
@@ -34,7 +36,7 @@ const ProjectList = ({projects}) => {
                             </div>
                             
                             <div className="section-name">
-                                <span className="introduction">PROJECTS</span>
+                                <span className="section-label">PROJECTS</span>
                                 <span className="small-dash"></span>
                                 <span className="small-dash"></span>
                                 <span className="dash-one"></span>

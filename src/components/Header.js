@@ -20,13 +20,27 @@ class Header extends React.Component {
         })
     }
 
+    componentDidMount() {
+        if(typeof({}) === "object") {
+            console.log('true');
+        } else {
+            console.log('false');
+        }
+    }
+
+    componentDidUpdate() {
+        console.log(this.context);
+    }
+
     render() {
         Header.contextType = ThemeContext;
         let buttonSpan;
-
-        if (this.context) {
+        // this is because this.context is equal to {} before it updates to the real value
+        if (typeof(this.context) === "object" || this.content === true) {
+            buttonSpan = <><span>Go Dark</span><img src={godark} alt="dark mode"/></>;
+        } else if (typeof(this.context) === "boolean" && this.context === true) {
             buttonSpan = <><span>Go light</span><img src={sun} alt="light mode"/></>
-        } else {
+        } else if (typeof(this.context) === "boolean" && this.context === false) {
             buttonSpan = <><span>Go Dark</span><img src={godark} alt="dark mode"/></>;
         }
         return (

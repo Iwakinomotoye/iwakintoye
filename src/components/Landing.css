@@ -7,12 +7,11 @@
 /* begin section one style  */
 .landing .section-one {
     width: 100%;
-    padding: 0 6.944vw;
+    padding: 86px 6.944vw 0;
     position: relative;
     min-height: 711px;
     display: flex;
     align-items: center;
-    padding-top: 86px;
 }
 .section-one-content {
     width: 100%;
@@ -49,10 +48,6 @@
     background: rgba(50, 224, 196, 0.1);
 }
 .heading-one {
-    font-family: "GorditaBold";
-    font-size: 42px;
-    line-height: 1.71;
-    color: var(--secondary-color);
     margin-bottom: 23px;
 }
 .section-one .description {
@@ -70,11 +65,11 @@
     letter-spacing: 0.1em;
     color: var(--secondary-color);
     position: relative;
-    padding-left: 22px;
-    padding-right: 22px;
+    padding: 0 22px;
     line-height: 48px;
     height: 50px;
     margin-top: 34px;
+    -webkit-tap-highlight-color: transparent;
 }
 .link-button:focus {
     outline: 1px dotted rgba(50, 224, 196, 0.3);
@@ -113,8 +108,9 @@
     transform: rotate(90deg);
     margin-right: -120px;
     min-width: 247px;
+    height: fit-content;
 }
-.introduction {
+.section-label {
     font-family: "GorditaMedium";
     font-size: 12px;
     letter-spacing: 0.05em;
@@ -158,11 +154,8 @@
         width: 350px;
         max-height: 350px;
     }
-    .heading-one {
-        font-size: 33px;
-    }
     .section-one .description {
-        font-size: 14px;
+        font-size: 16px;
     }
     .section-oneBg {
         right: calc(20px + 10vw);
@@ -186,9 +179,6 @@
         width: 400px;
         max-height: 400px;
     }
-    .heading-one {
-        font-size: 42px;
-    }
     .section-one .description {
         font-size: 18px;
     }
@@ -201,7 +191,7 @@
         width: 440px;
         margin-right: 0;
         margin-top: 40px;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
     }
     .section-one .right {
         width: 350px;
@@ -210,9 +200,6 @@
     .section-one .right img {
         width: 350px;
         max-height: 350px;
-    }
-    .heading-one {
-        font-size: 33px;
     }
     .section-one .description {
         font-size: 16px;
@@ -241,7 +228,6 @@
         max-width: 100%;
     }
     .heading-one {
-        font-size: 24px;
         line-height: 42px;
     }
     .link-button {
@@ -266,25 +252,19 @@
 .projects {
     margin-top: 87px;
     padding: 110px 6.944vw 0 6.944vw;
-    position: relative;
 }
 .projects h1 {
     margin-bottom: 50px;
 }
-.projects .dots {
-    position: absolute;
-    z-index: 0;
-    left: 0;
-    top: 0;
-    max-width: 70%;
-    min-height: 300px;
-    object-fit: none;
-}
-.projects .projects-content {
-    position: relative;
-    z-index: 1;
+@media (max-width: 767.98px) {
+    .projects {
+        padding: 60px 6.944vw 0 6.944vw;
+    }
 }
 @media (max-width: 575.98px) {
+    .projects {
+        padding: 60px 25px 0 27px;
+    }
 }
 
 /* end projects section styling */
@@ -292,8 +272,8 @@
 /* begin about-me section styling */
 .about-me {
     width: 100%;
-    /* background: var(--white); */
-    background-image: linear-gradient(to bottom, var(--primary-color-light) 0%, var(--white) 20%, var(--white) 80%, var(--primary-color-light) 100%);
+    background: var(--white);
+    /* background-image: linear-gradient(to bottom, var(--primary-color-light) 0%, var(--white) 20%, var(--white) 80%, var(--primary-color-light) 100%); */
     display: flex;
     align-items: center;
     padding: 200px 6.944vw 200px 6.944vw;
@@ -322,6 +302,7 @@
     margin-bottom: 30px;
 }
 .about-me .right img {
+    position: relative;
     border-radius: 3px;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
 }

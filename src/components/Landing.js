@@ -45,7 +45,7 @@ class Landing extends React.Component {
                         </div>
                     </div>
                     <div className="section-name">
-                        <span className="introduction">INTRODUCTION</span>
+                        <span className="section-label">INTRODUCTION</span>
                         <span className="dash-one"></span>
                         <span className="small-dash"></span>
                         <span className="small-dash"></span>
@@ -56,11 +56,8 @@ class Landing extends React.Component {
                 </div>
 
                 <div className="projects">
-                    <img src={dots} alt="" className="dots"/>
-                    <div className="projects-content">
-                        <h1 className="heading-one">My Projects</h1>
-                        <ProjectList projects={data} />
-                    </div>
+                    <h1 className="heading-one">My Projects</h1>
+                    <ProjectList projects={data} />
                 </div>
 
                 <div className="about-me">
@@ -90,7 +87,7 @@ class Landing extends React.Component {
                         </div>
                     </div>
                     <div className="section-name">
-                        <span className="introduction">ABOUT ME</span>
+                        <span className="section-label">ABOUT ME</span>
                         <span className="small-dash"></span>
                         <span className="small-dash"></span>
                         <span className="dash-one"></span>
