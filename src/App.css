@@ -40,6 +40,11 @@ html {
 button {
   border: 0;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  -webkit-tap-highlight-color: transparent;  
 }
 
 :root .light-theme{

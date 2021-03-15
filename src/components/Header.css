@@ -58,6 +58,7 @@
     font-family: "GorditaMedium";
     display: flex;
     align-items: center;
+    -webkit-tap-highlight-color: transparent;
 }
 .menu-icon {
     display: flex;

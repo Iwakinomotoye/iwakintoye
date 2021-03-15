@@ -1,4 +1,7 @@
+import SectionLabel from './SectionLabel';
+
 import './ProjectList.css';
+
 import arrow from '../assets/images/arrow.svg';
 import dots from '../assets/images/dots.svg';
 
@@ -35,14 +38,7 @@ const ProjectList = ({projects}) => {
                                 </div>
                             </div>
                             
-                            <div className="section-name">
-                                <span className="section-label">PROJECTS</span>
-                                <span className="small-dash"></span>
-                                <span className="small-dash"></span>
-                                <span className="dash-one"></span>
-                                <span className="small-dash"></span>
-                                <span className="small-dash"></span>
-                            </div>
+                            <SectionLabel label="PROJECTS"></SectionLabel>
                         </div>
                     )
                 })

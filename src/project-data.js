@@ -1,4 +1,4 @@
-const data = [
+const projectData = [
     {
         id: 1,
         name: 'Elbox',
@@ -34,4 +34,4 @@ const data = [
     },
 ]
 
-export default data;
+export default projectData;

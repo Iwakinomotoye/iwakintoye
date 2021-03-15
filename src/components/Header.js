@@ -20,18 +20,6 @@ class Header extends React.Component {
         })
     }
 
-    componentDidMount() {
-        if(typeof({}) === "object") {
-            console.log('true');
-        } else {
-            console.log('false');
-        }
-    }
-
-    componentDidUpdate() {
-        console.log(this.context);
-    }
-
     render() {
         Header.contextType = ThemeContext;
         let buttonSpan;

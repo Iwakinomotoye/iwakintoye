@@ -1,0 +1,33 @@
+.section-name {
+    display: flex;
+    align-items: center;
+    transform: rotate(90deg);
+    margin-right: -120px;
+    min-width: 247px;
+    height: fit-content;
+}
+.section-label {
+    font-family: "GorditaMedium";
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    color: var(--secondary-color);
+    margin-right: 16px;
+    white-space: nowrap;
+}
+.dash-one, .small-dash {
+    background: var(--secondary-color);
+    height: 2px;
+}
+.dash-one {
+    margin-right: 5px;
+    width: 35px;
+}
+.small-dash {
+    width: 10px;
+    margin: 0 5px;
+}
+@media (max-width: 767.98px) {
+    .section-name {
+        display: none;
+    }
+}

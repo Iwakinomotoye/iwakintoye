@@ -1,11 +1,14 @@
 import './Landing.css';
 import Header from './Header';
+import SectionLabel from './SectionLabel';
 
 import sitting from '../assets/images/sitting.svg';
 import arrow from '../assets/images/arrow.svg';
 import dots from '../assets/images/dots.svg';
 import myphoto from '../assets/images/myphoto.jpg';
-import data from '../data';
+import directionLine from '../assets/images/direction-line.svg';
+
+import projectData from '../project-data';
 import ProjectList from './ProjectList';
 
 import React from 'react';
@@ -44,20 +47,13 @@ class Landing extends React.Component {
                             <img src={sitting} alt="" />
                         </div>
                     </div>
-                    <div className="section-name">
-                        <span className="section-label">INTRODUCTION</span>
-                        <span className="dash-one"></span>
-                        <span className="small-dash"></span>
-                        <span className="small-dash"></span>
-                        <span className="small-dash"></span>
-                        <span className="small-dash"></span>
-                    </div>
+                    <SectionLabel label="INTRODUCTION"></SectionLabel>
                     <div className="section-oneBg"></div>
                 </div>
 
                 <div className="projects">
                     <h1 className="heading-one">My Projects</h1>
-                    <ProjectList projects={data} />
+                    <ProjectList projects={projectData} />
                 </div>
 
                 <div className="about-me">
@@ -86,13 +82,45 @@ class Landing extends React.Component {
                             </p>
                         </div>
                     </div>
-                    <div className="section-name">
-                        <span className="section-label">ABOUT ME</span>
-                        <span className="small-dash"></span>
-                        <span className="small-dash"></span>
-                        <span className="dash-one"></span>
-                        <span className="small-dash"></span>
-                        <span className="small-dash"></span>
+                    <SectionLabel label="ABOUT ME"></SectionLabel>
+                </div>
+
+                <div className="work-experience">
+                    <h1 className="heading-one">Work Experience</h1>
+                    <div className="experiences">
+                        <div className="experience-list">
+                            <div className="experience-card">
+                                <h2>Frontend Developer</h2>
+                                <h4>Printrite.ng</h4>
+                                <p>
+                                    I love to style web pages and make them act interactively using javascript.
+                                    I am very good with css (including scss). I am also very good 
+                                </p>
+                            </div>
+
+                            <img src={directionLine} alt=""/>
+                            
+                            <div className="experience-card">
+                                <h2>Software Developer</h2>
+                                <h4>Reach.africa</h4>
+                                <p>
+                                    I love to style web pages and make them act interactively using javascript.
+                                    I am very good with css (including scss). I am also very good 
+                                </p>
+                            </div>
+
+                            <img src={directionLine} alt=""/>
+                            
+                            <div className="experience-card">
+                                <h2>Where next?</h2>
+                                <h4>You decide!</h4>
+                                <p>
+                                    Make a sweet offer and I might just be your next frontend developer.
+                                    You know thats right!
+                                </p>
+                            </div>
+                        </div>
+                        <SectionLabel label="EXPERIENCE"></SectionLabel>
                     </div>
                 </div>
             </div>

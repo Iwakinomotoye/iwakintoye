@@ -69,7 +69,6 @@
     line-height: 48px;
     height: 50px;
     margin-top: 34px;
-    -webkit-tap-highlight-color: transparent;
 }
 .link-button:focus {
     outline: 1px dotted rgba(50, 224, 196, 0.3);
@@ -101,34 +100,6 @@
 }
 .link-button:hover::before, .link-button:hover::after {
     width: 100%;
-}
-.section-name {
-    display: flex;
-    align-items: center;
-    transform: rotate(90deg);
-    margin-right: -120px;
-    min-width: 247px;
-    height: fit-content;
-}
-.section-label {
-    font-family: "GorditaMedium";
-    font-size: 12px;
-    letter-spacing: 0.05em;
-    color: var(--secondary-color);
-    margin-right: 16px;
-    white-space: nowrap;
-}
-.dash-one, .small-dash {
-    background: var(--secondary-color);
-    height: 2px;
-}
-.dash-one {
-    margin-right: 5px;
-    width: 35px;
-}
-.small-dash {
-    width: 10px;
-    margin: 0 5px;
 }
 @media (max-width: 1329.98px) {
     .section-one .left {
@@ -204,9 +175,6 @@
     .section-one .description {
         font-size: 16px;
     }
-    .section-name {
-        display: none;
-    }
 }
 @media (max-width: 575.98px) {
     .landing .section-one {
@@ -234,7 +202,7 @@
         margin-top: 25px;
     }
 }
-@media (max-width: 374.98px) {
+@media (max-width: 424.98px) {
     .section-one .description {
         font-size: 14px;
         line-height: 28px;
@@ -273,10 +241,9 @@
 .about-me {
     width: 100%;
     background: var(--white);
-    /* background-image: linear-gradient(to bottom, var(--primary-color-light) 0%, var(--white) 20%, var(--white) 80%, var(--primary-color-light) 100%); */
     display: flex;
     align-items: center;
-    padding: 200px 6.944vw 200px 6.944vw;
+    padding: 200px 6.944vw 150px 6.944vw;
     overflow-y: hidden;
     position: relative;
 }
@@ -305,6 +272,8 @@
     position: relative;
     border-radius: 3px;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    object-position: top center;
+    max-height: 530px;
 }
 .my-photo {
     width: 100%;
@@ -320,7 +289,7 @@
 }
 @media (max-width: 991.98px) {
     .about-me {
-        padding: 150px 6.944vw 150px 6.994vw;
+        padding: 150px 6.944vw 100px 6.994vw;
     }
 }
 @media (max-width: 767.98px) {
@@ -341,12 +310,109 @@
 @media (max-width: 424.98px) {
     .about-me .right {
         float: none;
-        width: 250px;
-        margin: 20px auto;
+        width: 100%;
+        height: 320px;
+        margin: 30px 0;
+    }
+    .paragraph {
+        font-size: 14px;
+    }
+}
+/* end of about us styling */
+
+/* styling of work experience begins here*/
+.work-experience {
+    background: var(--primary-color-light);
+    padding: 100px 6.944vw 150px 6.944vw;
+}
+.experiences {
+    display: flex;
+    align-items: center;
+    align-items: center;
+}
+.experience-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-bottom: 30px;
+    margin-right: -50px;
+}
+.experience-list > img {
+    display: none;
+}
+.work-experience .heading-one {
+    text-align: center;
+    margin-bottom: 65px;
+}
+.experience-card {
+    width: 350px;
+    max-width: 30%;
+    min-width: 300px;
+    min-height: 245px;
+    background: #FFFFFF;
+    box-shadow: 0px 12px 30px rgba(50, 224, 196, 0.05);
+    border-radius: 3px;
+    padding: 30px 25px;
+    margin-right: 15px;
+    margin-bottom: 40px;
+}
+.experience-card h2 {
+    font-family: "GorditaBold";
+    line-height: 1.0;
+    margin-bottom: 20px;
+}
+.experience-card h4 {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-family: "GorditaBold";
+    color: var(--primary-color);
+}
+.experience-card p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #393E46;
+    font-family: "GorditaRegular";
+}
+.experience-card:last-of-type {
+    background: var(--primary-color);
+    margin-right: 0;
+}
+.experience-card:last-of-type h4 {
+    color: #fff;
+}
+@media (max-width: 1199.98px) {
+    .experience-list {
+        justify-content: space-around;
+        margin-right: -90px;
+    }
+    .experience-card {
+        margin-right: 0;
+    }
+}
+@media (max-width: 575.98px) {
+    .work-experience .heading-one {
+        margin-bottom: 20px;
+    }
+    .experience-list {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .experience-list > img {
+        display: block;
+    }
+    .experience-card {
+        margin: 25px 0;
+        padding: 30px 20px;
+        max-width: 450px;
+        width: 100%;
+        min-width: unset;
     }
 }
 @media (max-width: 374.98px) {
-    .paragraph {
-        font-size: 14px;
+    .experience-card h2 {
+        font-size: 22px;
     }
 }
