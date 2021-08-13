@@ -52,16 +52,19 @@ a {
   --primary-rgb-color: 50, 224, 196;
   --primary-color-light: #ECFFFD;
   --secondary-color: #393E46;
+  --secondary-rgb-color: 57, 62, 70;
   --black: #000;
   --white: #fff;
+
 }
 
 :root .dark-theme {
   --primary-color: #32E0C4;
-  --primary-color-light: #000;
+  --primary-color-light: #393E46;
   --secondary-color: #fff;
+  --secondary-rgb-color: 225, 225, 225;
   --black: #fff;
-  --white: #000;
+  --white: rgba(43, 102, 92, 0.199);
 }
 
 h1 {

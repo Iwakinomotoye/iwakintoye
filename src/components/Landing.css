@@ -625,17 +625,17 @@
 }
 input::placeholder, textarea::placeholder {
     font-family: "GorditaRegular";
-    color: rgba(57, 62, 70, 0.49);
+    color: rgba(var(--secondary-rgb-color), 0.49);
     opacity: 1;
 }
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     font-family: "GorditaRegular";
-    color: rgba(57, 62, 70, 0.49);
+    color: rgba(var(--secondary-rgb-color), 0.49);
     opacity: 1;
 }
 input::-moz-placeholder, textarea::-moz-placeholder {
     font-family: "GorditaRegular";
-    color: rgba(57, 62, 70, 0.49);
+    color: rgba(var(--secondary-rgb-color), 0.49);
     opacity: 1;
 }
 .contact-me input { 
