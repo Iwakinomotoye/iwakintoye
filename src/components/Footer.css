@@ -8,8 +8,8 @@
     align-items: center;
 }
 .footer p {
-    font-family: "GorditaRegular";
-    color: var(--secondary-color);
+    font-family: "GorditaMedium";
+    color: #393E46;
     font-size: 12px;
     line-height: 3em;
 }
