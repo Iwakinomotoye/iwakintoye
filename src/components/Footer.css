@@ -1,0 +1,31 @@
+/* start of footer style */
+.footer {
+    height: 134px;
+    background: var(--primary-color);
+    padding: 0 6.944vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer p {
+    font-family: "GorditaRegular";
+    color: var(--secondary-color);
+    font-size: 12px;
+    line-height: 3em;
+}
+.footer .socials a:not(:last-of-type) {
+    margin-right: 40px;
+}
+@media (max-width: 575.98px) {
+    .footer {
+        padding: 50px 25px 50px 27px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: fit-content;
+    }
+    .footer .socials {
+        margin-bottom: 27px;
+    }
+}
+/* end of footer style */

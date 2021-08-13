@@ -1,34 +1,31 @@
 const projectData = [
     {
         id: 1,
-        name: 'Elbox',
+        name: 'Quiz App',
         description: `
-        This project is an ongoing project built with vue.js. It is built for schools so that they 
-        can manage students, teachers, parents, and even school activities over the web.  I lead a 
-        two-man team to build the front end interface. The front end team consumes api that is served 
-        by the back end team to store and fetch information from the database.`,
-        image: 'elbox.jpg',
+        This is a personal project where you can answer different random questions based on the category 
+        selected. You would also be able to see your performance at the end of the game. Questions and answers
+        are fetched from opentdb.com`,
+        image: 'quiz3.jpg',
         stacks: ['HTML', 'CSS', 'VUE.JS', 'API']
     },
     {
         id: 2,
-        name: 'Elbox',
+        name: 'Reach',
         description: `
-        This project is an ongoing project built with vue.js. It is built for schools so that they 
-        can manage students, teachers, parents, and even school activities over the web.  I lead a 
-        two-man team to build the front end interface. The front end team consumes api that is served 
-        by the back end team to store and fetch information from the database.`,
+        This is Reach’s website that majorly explains what Reach as a company does. In this project, 
+        I learned how to optimize assets, most especially images, and the particular type of image extensions 
+        to be used in particular cases so that they can load faster on web pages`,
         image: 'elbox.jpg',
-        stacks: ['HTML', 'CSS', 'VUE.JS', 'API']
+        stacks: ['HTML', 'SCSS', 'VUE.JS', 'API']
     },
     {
         id: 3,
-        name: 'Elbox',
+        name: 'Shelta',
         description: `
-        This project is an ongoing project built with vue.js. It is built for schools so that they 
-        can manage students, teachers, parents, and even school activities over the web.  I lead a 
-        two-man team to build the front end interface. The front end team consumes api that is served 
-        by the back end team to store and fetch information from the database.`,
+        This is a web application that helps individuals to refer landlords so that they can list their 
+        properties they are available for rent or lease while getting commission for deals on those 
+        properties.`,
         image: 'elbox.jpg',
         stacks: ['HTML', 'CSS', 'VUE.JS', 'API']
     },

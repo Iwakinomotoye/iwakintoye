@@ -33,7 +33,7 @@ const ProjectList = ({projects}) => {
                                     </div>
                                     {/* add react's link for routing to the details page */}
                                     <button className="link-button">
-                                        <span>VIEW DETAILS<img src={arrow} alt="" /></span>
+                                        <span>VIEW PROJECT<img src={arrow} alt="" /></span>
                                     </button>
                                 </div>
                             </div>
