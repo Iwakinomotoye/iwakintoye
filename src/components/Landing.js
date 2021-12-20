@@ -18,6 +18,7 @@ import sass from '../assets/images/sass.svg';
 
 import projectData from '../project-data';
 import ProjectList from './ProjectList';
+import ContactMe from './ContactMe';
 
 import React from 'react';
 
@@ -120,7 +121,7 @@ class Landing extends React.Component {
                             
                             <div className="experience-card">
                                 <h2>Frontend Developer</h2>
-                                <h4>getbumpa.com</h4>
+                                <h4>Getbumpa.com</h4>
                                 <ul>
                                     <li>Worked with the team in building a fully functional storefront.</li>
                                     <li>Ensured performance efficient standards while building the web application.</li>
@@ -135,7 +136,7 @@ class Landing extends React.Component {
                                 <h4>You decide!</h4>
                                 <p>
                                     Make a sweet offer and I might just be your next frontend developer.
-                                    You know thats right!
+                                    You know that's right!
                                 </p>
                             </div>
                         </div>
@@ -165,7 +166,7 @@ class Landing extends React.Component {
                 <div className="contact">
                     <div className="contact-me">
                         <div>
-                            <h1 className="heading-one">Let’s build Something together</h1>
+                            <h1 className="heading-one">Let's build Something together</h1>
                             <p>
                                 Think I might be the right friend for your next adventure? Take a minute, 
                                 I'd love to hear about your project, or need an advice about frontend 
@@ -175,13 +176,7 @@ class Landing extends React.Component {
                             <p className="email">iwakinomotoye@gmail.com</p>
                         </div>
                         <div>
-                            <input type="text" placeholder="Full name"/>
-
-                            <input type="email" placeholder="Email address"/>
-
-                            <textarea placeholder="Message"></textarea>
-
-                            <button>SEND MESSAGE</button>
+                            <ContactMe></ContactMe>
                         </div>
                     </div>
                     <SectionLabel label="CONTACT"></SectionLabel>
