@@ -32,7 +32,7 @@ const ProjectList = ({projects}) => {
                                         }
                                     </div>
                                     {/* add react's link for routing to the details page */}
-                                    <a href={link} target="_blank">
+                                    <a href={link} target="_blank" rel="noreferrer">
                                         <button className="link-button">
                                             <span>VIEW PROJECT<img src={arrow} alt="" /></span>
                                         </button>
