@@ -44,6 +44,7 @@
 }
 .image-container img {
     object-fit: cover;
+    object-position: left center;
     width: 100%;
     height: 100%;
     border-radius: 3px;
@@ -84,6 +85,12 @@
     margin-right: 20px;
     letter-spacing: 0.2em;
     font-size: 12px;
+}
+.project-details a {
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 34px;
 }
 @media (max-width: 1350px) {
     .image-container {

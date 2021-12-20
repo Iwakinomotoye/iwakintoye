@@ -80,7 +80,7 @@ class Landing extends React.Component {
                                 use logic to provide solution to challenges thereby solving
                                 user potential problems. With three years of experience in
                                 frontend developement, I have been opportuned to build web apps that
-                                spread across different areas such as education, estate management and finance.
+                                spread across different sectors such as education, estate management and finance.
                             </p>
                             <p className="paragraph">
                                 I was born in Lagos State, Nigeria. I graduated
@@ -97,24 +97,34 @@ class Landing extends React.Component {
                     <h1 className="heading-one">Work Experience</h1>
                     <div className="experiences">
                         <div className="experience-list">
-                            <div className="experience-card">
+                            {/* <div className="experience-card">
                                 <h2>Frontend Developer</h2>
                                 <h4>Printrite.ng</h4>
                                 <ul>
                                     <li>Created a web application for real estate agents using vue.js.</li>
                                     <li>Created a school management web application using vue.js.</li>
                                 </ul>
+                            </div> */}
+
+                            <div className="experience-card">
+                                <h2>Software Developer</h2>
+                                <h4>Reach.africa</h4>
+                                <ul>
+                                    <li>Wrote Javascript functions to make html table downloadable as pdf files.</li>
+                                    <li>Improved Reach’s website performance by 20%</li>
+                                    <li>Implemented paystack payment API on the frontend.</li>
+                                </ul>
                             </div>
 
                             <img src={directionLine} alt=""/>
                             
                             <div className="experience-card">
-                                <h2>Software Developer</h2>
-                                <h4>Reach.africa</h4>
+                                <h2>Frontend Developer</h2>
+                                <h4>getbumpa.com</h4>
                                 <ul>
-                                    <li>Wrote script to make html table downloadable as pdf files.</li>
-                                    <li>Improved Reach’s website performance by 20%</li>
-                                    <li>Created a fintech web application using vue.js.</li>
+                                    <li>Worked with the team in building a fully functional storefront.</li>
+                                    <li>Ensured performance efficient standards while building the web application.</li>
+                                    <li>Used chartjs to implement bar and pie charts to fit custom design.</li>
                                 </ul>
                             </div>
 

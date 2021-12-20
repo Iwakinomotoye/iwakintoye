@@ -47,13 +47,13 @@ class Header extends React.Component {
                         <button className="godark-button" onClick={() => this.props.onChangeTheme()}>
                             {buttonSpan}
                         </button>
-                        <div className="menu" onClick={this.toggleMenu}>
+                        {/* <div className="menu" onClick={this.toggleMenu}>
                             <span className="menu-text">MENU</span>
                             <span className="menu-icon">
                                 <span></span>
                                 <span></span>
                             </span>
-                        </div>
+                        </div> */}
                     </li>
                 </ul>
             </nav>

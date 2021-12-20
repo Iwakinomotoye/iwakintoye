@@ -57,6 +57,9 @@
     color: var(--secondary-color);
     font-weight: bold;
 }
+.section-one-content .link-button {
+    margin-top: 34px;
+}
 .link-button {
     background: inherit;
     font-family: "GorditaMedium";
@@ -68,7 +71,6 @@
     padding: 0 22px;
     line-height: 48px;
     height: 50px;
-    margin-top: 34px;
 }
 .link-button:focus {
     outline: 1px dotted rgba(50, 224, 196, 0.3);
@@ -372,7 +374,7 @@
 .experience-card ul {
     padding-left: 20px;
 }
-.experience-card li {
+.experience-card li, .experience-card p {
     font-size: 14px;
     line-height: 1.5;
     font-family: "GorditaRegular";
@@ -648,6 +650,7 @@ input::-moz-placeholder, textarea::-moz-placeholder {
 .contact-me button {
     background: var(--primary-color);
     width: 100%;
+    max-width: 520px;
     height: 60px;
     font-size: 16px;
     border-radius: 3px;

@@ -11,7 +11,7 @@ const ProjectList = ({projects}) => {
         <>
             {
                 projects.map(project => {
-                    let {id, name, description, image, stacks} = project;
+                    let {id, name, description, image, stacks, link} = project;
 
                     
                     return (
@@ -32,9 +32,11 @@ const ProjectList = ({projects}) => {
                                         }
                                     </div>
                                     {/* add react's link for routing to the details page */}
-                                    <button className="link-button">
-                                        <span>VIEW PROJECT<img src={arrow} alt="" /></span>
-                                    </button>
+                                    <a href={link} target="_blank">
+                                        <button className="link-button">
+                                            <span>VIEW PROJECT<img src={arrow} alt="" /></span>
+                                        </button>
+                                    </a>
                                 </div>
                             </div>
                             
