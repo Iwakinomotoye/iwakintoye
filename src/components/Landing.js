@@ -57,7 +57,7 @@ class Landing extends React.Component {
                         </div>
                     </div>
                     <SectionLabel label="INTRODUCTION"></SectionLabel>
-                    <div className="section-oneBg"></div>
+                    {/* <div className="section-oneBg"></div> */}
                 </div>
 
                 <div className="projects">

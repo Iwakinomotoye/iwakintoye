@@ -21,7 +21,6 @@ export default function ContactMe() {
     }
 
     const updateEmailBody = (event) => {
-        console.log(event.target.value);
         setEmailBody(event.target.value);
     }
 
